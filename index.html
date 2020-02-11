@@ -13,18 +13,15 @@
 		<!-- End Google Tag Manager -->
 	<title>gtm測試網頁</title>
 	<script>
-		function red(btn){
+		function test(btn){
+			var GTMParam = new object();
+			GTMParam.id = btn.id;
+			GTMParam.value = btn.value;
+			GTMParam.name = btn.name;
 			var selColorValue = btn.value;
 			dataLayer.push({
 				'Event':'colorBtnClick',
-				'color':'red'
-			})
-		};
-		function blue(btn){
-			var selColorValue = btn.value;
-			dataLayer.push({
-				'Event':'colorBtnClick',
-				'color':'blue'
+				'colorButton':GTMParam
 			})
 		};
 	</script>
@@ -39,7 +36,7 @@
 		<div></div>
 		<a id="momo" href="https://www.momoshop.com.tw/">Click to momoshop</a>
 		<br></br>
-		<button id="red" value="1" onclick='red(this);'>red</button>
-		<button id="blue" value="2" onclick='blue(this);'>blue</button>
+		<button id="redBtn" value="1" name="red" onclick='test(this);'>red</button>
+		<button id="blueBtn" value="2" name="blue" onclick='test(this);'>blue</button>
 	</body>
 </html>
