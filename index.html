@@ -19,7 +19,7 @@
 			GTMParam.value = btn.value;
 			GTMParam.name = btn.name;
 			var selColorValue = btn.value;
-			window.dataLayer = [];
+			window.dataLayer = window.dataLayer || [];
 			dataLayer.push({
 				'Event':'colorBtnClick',
 				'colorButton':GTMParam
