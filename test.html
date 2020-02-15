@@ -11,34 +11,20 @@
 		})(window,document,'script','dataLayer','GTM-WFP85Z6');
 		</script>
 		<!-- End Google Tag Manager -->
-	<title>gtm測試網頁</title>
-	<script>
-		function test(btn){
-			var GTMParam = new Object();
-			GTMParam.id = btn.id;
-			GTMParam.value = btn.value;
-			GTMParam.name = btn.name;
-			var selColorValue = btn.value;
-			window.dataLayer = window.dataLayer || [];
-			dataLayer.push({
-				'Event':'colorBtnClick',
-				'colorButton':GTMParam
-			})
-		};
-	</script>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFP85Z6"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<h1>Google Tag Manager Test</h1>
-		<a id="google" href="https://www.google.com/">Click to Google</a>
-		<div></div>
-		<a id="momo" href="https://www.momoshop.com.tw/">Click to momoshop</a>
-		<br></br>
-		<button id="redBtn" value="1" name="red" onclick='test(this);'>red</button>
-		<button id="blueBtn" value="2" name="blue" onclick='test(this);'>blue</button>
-		<a id = "804482997" href="test.html">804482997</a>
+		var parameter = {
+			ecomm_prodid:"6498818",
+			ecomm_pagetype:"product",
+			ecomm_totalvalue:1350,
+			category:["美妝保養 > 專櫃保養品牌 > 韓系專櫃 > su:m37 甦秘 官方直營"],
+			login: "n"
+		}
+		window.dataLayer = window.dataLayer || [];
+		dataLayer.push("parameter":parameter);
 	</body>
 </html>
